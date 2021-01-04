@@ -7,6 +7,7 @@ namespace SurveyCorona.pom
 {
     class FirstPage
     {
+
         [FindsBy(How = How.Id, Using = "edit-submitted-node7341-new-1585718015800")]
         public IWebElement InputFirstName { get; set; }
         [FindsBy(How = How.Id, Using = "edit-submitted-node7341-new-1585718049618")]

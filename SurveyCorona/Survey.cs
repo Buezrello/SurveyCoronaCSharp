@@ -39,6 +39,9 @@ namespace SurveyCorona
             firstPage.EnterLastName(GINDIN);
             firstPage.CheckAgree();
             firstPage.EnterEmail(MY_EMAIL);
+
+            System.Threading.Thread.Sleep(1000);
+
             firstPage.ClickBtnNext();
         }
 
@@ -46,6 +49,8 @@ namespace SurveyCorona
         {
             //SecondPage secondPage = PageFactory.InitElements<SecondPage>(driver);
             SecondPage secondPage = new SecondPage(driver);
+
+            System.Threading.Thread.Sleep(1000);
 
             secondPage.ClickBtnSubmit();
         }

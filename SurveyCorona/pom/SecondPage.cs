@@ -24,5 +24,11 @@ namespace SurveyCorona.pom
             BtnSubmit.Click();
         }
 
+        public bool PageContains(string text)
+        {
+            IWebElement body = _driver.FindElement(By.TagName("body"));
+            return body.Text.Contains(text);
+        }
+
     }
 }
